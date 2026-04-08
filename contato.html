@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Imagens/Favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Contato - Isadora Roosevelt</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="curriculo.html">Currículo</a> |
+            <a href="github.html">Github</a> |
+            <a href="servicos.html">Serviços</a> |
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="formulario-contato">
+            <h1>Entre em Contato</h1>
+            <p>Preencha os campos abaixo para iniciarmos o seu orçamento personalizado.</p>
+            <form action="contato.html" method="post">
+                <p>
+                    <label for="nome">Nome Completo:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(27) 99999-9999">
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                </p>
+
+               <p>
+    <label>Tipo de Contratante:</label><br>
+
+    <label>
+        <input type="radio" name="tipo_pessoa" value="fisica">
+        Pessoa Física
+    </label><br>
+
+    <label>
+        <input type="radio" name="tipo_pessoa" value="juridica">
+        Pessoa Jurídica
+    </label>
+</p>
+                <br>
+            
+                <p>
+    <label>Melhor horário para contato:</label><br>
+
+    <label>
+        <input type="checkbox" name="horario" value="manha">
+        Manhã
+    </label><br>
+
+    <label>
+        <input type="checkbox" name="horario" value="tarde">
+        Tarde
+    </label><br>
+
+    <label>
+        <input type="checkbox" name="horario" value="noite">
+        Noite
+    </label>
+</p>
+<br>
+                <p>
+                    <label for="servico">Serviço Desejado:</label><br>
+                    <select id="servico" name="servico">
+                        <option value="estatica">Página Estática (HTML/CSS)</option>
+                        <option value="dinamica">Página Dinâmica</option>
+                        <option value="avancada">Super Avançada / Sistema</option>
+                        <option value="manutencao">Manutenção</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="descricao">Breve descrição do que deseja contratar:</label><br>
+                    <textarea id="descricao" name="descricao" rows="6" cols="50" placeholder="Descreva os detalhes do seu projeto aqui..."></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar Solicitação</button>
+                    <button type="reset">Limpar Tudo</button>
+                </p>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 - Isadora Roosevelt Eler</p>
+    </footer>
+</body>
+</html>
